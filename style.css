@@ -1,0 +1,376 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  color: #404040;
+}
+header {
+  background-color: #ffffff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #5d8aa8;
+}
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #2c3e50;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: #ffd700;
+  transition: width 0.3s;
+  -webkit-transition: width 0.3s;
+}
+
+nav a:hover::after {
+  width: 100%;
+  left: 0;
+  background: #ffd700;
+}
+
+header img {
+  height: 50px;
+}
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #404040;
+  font-family: "Montserrat", sans-serif;
+}
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  text-align: center;
+}
+
+.hero-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.hero-content {
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin: 0 0 20px;
+  font-family: "Montserrat", sans-serif;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin: 0 0 40px;
+  animation: fadeInUp 1.5s ease-in-out;
+}
+
+.hero .cta {
+  background-color: #ffd700;
+  color: #2c3e50;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-size: 1em;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 5px;
+  animation: fadeInUp 2s ease-in-out;
+}
+
+#about > img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.section {
+  padding: 60px 20px;
+  text-align: center;
+  /* display: flex;
+  float; */
+}
+
+.section h2 {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 40px;
+  color: #5d8aa8;
+  position: relative;
+  display: inline-block;
+}
+
+.section h2::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  display: block;
+  margin-top: 5px;
+  left: 0;
+  background: #ffd700;
+}
+
+.about {
+  padding: 80px 0;
+  background-color: #f9f9f9;
+}
+
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-text {
+  max-width: 600px;
+  margin-right: 50px;
+  padding-left: 4rem;
+}
+
+.about-text h2 {
+  color: #333;
+  font-size: 42px;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.about-text p {
+  color: #666;
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.about-image img:hover {
+  transform: scale(1.05);
+}
+
+/* .about img {
+  width: 40%;
+  margin-right: 20px;
+} */
+
+.about p {
+  font-size: 1.2em;
+}
+
+.services .service {
+  display: inline-block;
+  width: 30%;
+  margin: 0 2%;
+  transition: transform 0.3s;
+}
+
+.services .service:hover {
+  transform: translateY(-4px);
+}
+
+.service:hover img {
+  transform: scale(1.1);
+  transition: transform ease-in-out 0.3s;
+}
+
+.services {
+  /* background: linear-gradient(135deg, #5d8aa8, #ffd700); */
+  padding: 60px 20px;
+  /* color: #fff; */
+  text-align: center;
+}
+
+.services h2 {
+  font-family: "Montserrat", sans-serif;
+  /* color: #ffffff; */
+  margin-bottom: 40px;
+  position: relative;
+  display: inline-block;
+}
+
+.services h2::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  display: block;
+  margin-top: 5px;
+  left: 0;
+  background: #ffd700;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+
+
+.portfolio {
+  background-color: #f5f5f5;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.portfolio h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #5d8aa8;
+  margin-bottom: 40px;
+  position: relative;
+  display: inline-block;
+}
+
+.portfolio h2::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  display: block;
+  margin-top: 5px;
+  left: 0;
+  background: #ffd700;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.portfolio-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: opacity 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-item:hover .overlay {
+  opacity: 1;
+}
+
+.overlay-content {
+  text-align: center;
+  color: #fff;
+}
+
+.overlay h3 {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.overlay p {
+  font-family: "Open Sans", sans-serif;
+  margin: 10px 0 0;
+}
+
+.testimonials {
+  background-color: #f9f9f9;
+}
+
+.testimonials p {
+  font-style: italic;
+  font-size: 1.2em;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact input,
+.contact textarea {
+  width: 50%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #5d8aa8;
+  border-radius: 5px;
+}
+
+.contact button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #5d8aa8;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.contact button:hover {
+  background-color: #ffd700;
+}
+
+footer {
+  background-color: #5d8aa8;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
