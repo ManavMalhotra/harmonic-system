@@ -7,8 +7,12 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+    <!-- navbar  -->
     <header>
-      <img src="./logo.jpeg" alt="Harmonic Systems Logo" />
+      <div class="logo-container">
+        <img src="./logo.png" alt="Harmonic Systems Logo" />
+        <h3>Harmonic Systems</h3>
+      </div>
       <nav>
         <a href="#home">Home</a>
         <a href="#about">About Us</a>
@@ -18,6 +22,8 @@
         <a href="#contact">Contact</a>
       </nav>
     </header>
+
+    <!-- hero section  -->
     <section class="hero">
       <video autoplay muted loop class="hero-video">
         <source src="./video.mp4" type="video/mp4" />
@@ -30,6 +36,7 @@
       </div>
     </section>
 
+    <!-- about section  -->
     <section id="about" class="section about">
       <div class="container">
         <div class="about-content">
@@ -60,33 +67,42 @@
       </div>
     </section>
 
-    <section id="about" class="section about">
+    <!-- services section  -->
+    <section id="services" class="section about">
       <div class="container">
-        <div class="about-content">
-          <div class="about-text">
+        <div class="services-content">
+          <div class="services-text">
             <h2>Our Services</h2>
           </div>
-          <div class="about-image">
+          <div class="services-image">
             <div class="service">
               <img src="./project1.jpeg" alt="Architectural Lighting" />
               <p>Architectural Lighting</p>
             </div>
             <div class="service">
+              <img
+                src="./project4.jpeg"
+                alt="Themed Environment Illumination"
+              />
+              <p>Custom Lighting Solutions</p>
+            </div>
+            <div class="service">
               <img src="./project2.jpeg" alt="Entertainment Lighting" />
-              <p>Entertainment Lighting</p>
+              <p>Themed Environment Illumination</p>
             </div>
             <div class="service">
               <img
                 src="./project3.jpeg"
                 alt="Themed Environment Illumination"
               />
-              <p>Themed Environment Illumination</p>
+              <p>Entertainment Lighting</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- portfolio section  -->
     <section id="portfolio" class="section portfolio">
       <h2>Our Portfolio</h2>
       <div class="portfolio-grid">
@@ -100,25 +116,25 @@
           </div>
         </div>
         <div class="portfolio-item">
-          <img src="./project2.jpeg" alt="Project 2" />
-          <div class="overlay">
-            <div class="overlay-content">
-              <h3>Project 2</h3>
-              <p>Entertainment Lighting</p>
-            </div>
-          </div>
-        </div>
-        <div class="portfolio-item">
           <img src="./project3.jpeg" alt="Project 3" />
           <div class="overlay">
             <div class="overlay-content">
-              <h3>Project 3</h3>
+              <h3>Project 2</h3>
               <p>Themed Environment Illumination</p>
             </div>
           </div>
         </div>
         <div class="portfolio-item">
-          <img src="./project3.jpeg" alt="Project 4" />
+          <img src="./project2.jpeg" alt="Project 2" />
+          <div class="overlay">
+            <div class="overlay-content">
+              <h3>Project 3</h3>
+              <p>Entertainment Lighting</p>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <img src="./project4.jpeg" alt="Project 4" />
           <div class="overlay">
             <div class="overlay-content">
               <h3>Project 4</h3>
@@ -128,6 +144,8 @@
         </div>
       </div>
     </section>
+
+    <!-- testimonial section  -->
     <section id="testimonials" class="section testimonials">
       <h2>Testimonials</h2>
       <div class="testimonial">
@@ -144,6 +162,7 @@
       </div>
     </section>
 
+    <!-- contact-us section  -->
     <section id="contact" class="section contact">
       <h2>Contact Us</h2>
       <form>
@@ -155,7 +174,35 @@
       </form>
     </section>
     <footer>
-      <p>&copy; 2024 Harmonic Systems. All rights reserved.</p>
+      <div class="footer-content">
+        <div class="footer-about">
+          <h3>About Harmonic Systems</h3>
+          <p>
+            HARMONIC SYSTEMS was formed as a vanguard Lighting Design and
+            Consultancy firm. For over a decade, the company has been associated
+            with various projects in India and abroad, covering niches like
+            Architectural, Entertainment, and Themed Environment Illumination.
+          </p>
+          <p>
+            The atelier’s design philosophy is based on the universal law of
+            Harmony. We see LIGHT as a cohesive catalyst, connecting human
+            emotions and experiences with cosmic energies of flow and balance.
+            We believe that LIGHT is life and life is all about light. In
+            today's techno-robot world, we continuously update ourselves to
+            serve the best interests of our clientele.
+          </p>
+        </div>
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <p>
+            Office Address: Plot no - A-40, Unit No Tower A 207, I-Thum IT
+            Tower, Industrial Area, Sector 62, Noida, Uttar Pradesh 201309
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Harmonic Systems. All rights reserved.</p>
+      </div>
     </footer>
   </body>
 </html>
