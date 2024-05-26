@@ -6,6 +6,12 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #404040;
 }
+
+*::selection {
+  background-color: #ffd700;
+  color: #404040;
+}
+
 header {
   background-color: #ffffff;
   padding: 20px;
